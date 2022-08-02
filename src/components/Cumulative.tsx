@@ -25,13 +25,13 @@ const Cumulative = ({
   }, [checkedIndex]);
 
   return (
-    <>
+    <div className='taskContainer'>
+        <h1>{achievement.name}</h1> 
       {achievement.pointValue.map(({ amount }, index) => {
         return (
           <div>
             <label>
               {amount} {achievement.name}
-            </label>
             <input
               type="checkbox"
               checked={checkedIndex >= index}
@@ -43,10 +43,11 @@ const Cumulative = ({
                 }
               }}
             />
+            </label>
           </div>
         );
       })}
-    </>
+    </div>
   );
 };
 

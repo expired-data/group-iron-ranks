@@ -23,6 +23,7 @@ const Summary = (): JSX.Element => {
 
   return (
     <>
+    <div className='allTasks'>
       <Cumulative
         achievement={Diaries}
         setAchievementPoints={setAchievementPointsFn("Diaries")}
@@ -33,22 +34,22 @@ const Summary = (): JSX.Element => {
         setAchievementPoints={setAchievementPointsFn("CAs")}
       />
       <br />
+      <div className='taskContainer'>
+        <h1>Misc Tasks</h1>
       <OneOff
         achievement={TotalLevel}
         setAchievementPoints={setAchievementPointsFn("Total")}
       />
-      <br />
       <OneOff
         achievement={QuestCape}
         setAchievementPoints={setAchievementPointsFn("QuestCape")}
       />
-      <br />
       <OneOff
         achievement={InfernalCape}
         setAchievementPoints={setAchievementPointsFn("InfernalCape")}
       />
-      <br />
-
+      </div>
+      </div>
       <Score
         score={Object.values(achievementPoints).reduce(
           (acc, val) => acc + val,
