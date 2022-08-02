@@ -17,12 +17,13 @@ const OneOff = ({
 
   return (
     <div>
-      <label>{name}
-      <input
-        type="checkbox"
-        checked={checked}
-        onChange={() => setChecked(!checked)}
-      />
+      <label>
+        {name}
+        <input
+          type="checkbox"
+          checked={checked}
+          onChange={() => setChecked(!checked)}
+        />
       </label>
     </div>
   );

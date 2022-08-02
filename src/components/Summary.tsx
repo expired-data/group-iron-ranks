@@ -23,32 +23,32 @@ const Summary = (): JSX.Element => {
 
   return (
     <>
-    <div className='allTasks'>
-      <Cumulative
-        achievement={Diaries}
-        setAchievementPoints={setAchievementPointsFn("Diaries")}
-      />
-      <br />
-      <Cumulative
-        achievement={CombatAchievements}
-        setAchievementPoints={setAchievementPointsFn("CAs")}
-      />
-      <br />
-      <div className='taskContainer'>
-        <h1>Misc Tasks</h1>
-      <OneOff
-        achievement={TotalLevel}
-        setAchievementPoints={setAchievementPointsFn("Total")}
-      />
-      <OneOff
-        achievement={QuestCape}
-        setAchievementPoints={setAchievementPointsFn("QuestCape")}
-      />
-      <OneOff
-        achievement={InfernalCape}
-        setAchievementPoints={setAchievementPointsFn("InfernalCape")}
-      />
-      </div>
+      <div className="allTasks">
+        <Cumulative
+          achievement={Diaries}
+          setAchievementPoints={setAchievementPointsFn("Diaries")}
+        />
+        <br />
+        <Cumulative
+          achievement={CombatAchievements}
+          setAchievementPoints={setAchievementPointsFn("CAs")}
+        />
+        <br />
+        <div className="taskContainer">
+          <h1>Misc Tasks</h1>
+          <OneOff
+            achievement={TotalLevel}
+            setAchievementPoints={setAchievementPointsFn("Total")}
+          />
+          <OneOff
+            achievement={QuestCape}
+            setAchievementPoints={setAchievementPointsFn("QuestCape")}
+          />
+          <OneOff
+            achievement={InfernalCape}
+            setAchievementPoints={setAchievementPointsFn("InfernalCape")}
+          />
+        </div>
       </div>
       <Score
         score={Object.values(achievementPoints).reduce(

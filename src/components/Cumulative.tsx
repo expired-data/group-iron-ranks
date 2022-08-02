@@ -25,24 +25,24 @@ const Cumulative = ({
   }, [checkedIndex]);
 
   return (
-    <div className='taskContainer'>
-        <h1>{achievement.name}</h1> 
+    <div className="taskContainer">
+      <h1>{achievement.name}</h1>
       {achievement.pointValue.map(({ amount }, index) => {
         return (
           <div>
             <label>
               {amount} {achievement.name}
-            <input
-              type="checkbox"
-              checked={checkedIndex >= index}
-              onChange={() => {
-                if (checkedIndex >= index) {
-                  setCheckedIndex(index - 1);
-                } else {
-                  setCheckedIndex(index);
-                }
-              }}
-            />
+              <input
+                type="checkbox"
+                checked={checkedIndex >= index}
+                onChange={() => {
+                  if (checkedIndex >= index) {
+                    setCheckedIndex(index - 1);
+                  } else {
+                    setCheckedIndex(index);
+                  }
+                }}
+              />
             </label>
           </div>
         );
