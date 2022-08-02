@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/group-iron-ranks/static/css/main.964fdded.css",
-    "main.js": "/group-iron-ranks/static/js/main.75d5bd22.js",
+    "main.css": "/group-iron-ranks/static/css/main.66a9d1aa.css",
+    "main.js": "/group-iron-ranks/static/js/main.d957bbb3.js",
     "index.html": "/group-iron-ranks/index.html",
-    "main.964fdded.css.map": "/group-iron-ranks/static/css/main.964fdded.css.map",
-    "main.75d5bd22.js.map": "/group-iron-ranks/static/js/main.75d5bd22.js.map"
+    "main.66a9d1aa.css.map": "/group-iron-ranks/static/css/main.66a9d1aa.css.map",
+    "main.d957bbb3.js.map": "/group-iron-ranks/static/js/main.d957bbb3.js.map"
   },
   "entrypoints": [
-    "static/css/main.964fdded.css",
-    "static/js/main.75d5bd22.js"
+    "static/css/main.66a9d1aa.css",
+    "static/js/main.d957bbb3.js"
   ]
 }
